@@ -6,13 +6,14 @@
     <title>Document</title>
 </head>
 <body>
-   <!DOCTYPE html>
+    <!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV Digital - Meisya Ria Makdalena</title>
+    <title>CV Meisya Ria Makdalena</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
         
@@ -21,180 +22,217 @@
             background-color: #fefce8; /* Light yellow background */
         }
 
-        .yellow-gradient {
-            background: linear-gradient(135deg, #facc15 0%, #eab308 100%);
+        .yellow-accent {
+            background-color: #fde047; /* Bright yellow */
         }
 
         .card {
             background: white;
-            border-radius: 20px;
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            border-radius: 1rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
         }
 
-        .profile-img {
-            border: 8px solid #fefce8;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        .card:hover {
+            transform: translateY(-5px);
         }
 
         .section-title {
-            position: relative;
-            display: inline-block;
+            border-left: 4px solid #eab308;
+            padding-left: 1rem;
             margin-bottom: 1.5rem;
-        }
-
-        .section-title::after {
-            content: '';
-            position: absolute;
-            left: 0;
-            bottom: -5px;
-            width: 50px;
-            height: 4px;
-            background-color: #facc15;
-            border-radius: 2px;
+            font-weight: 700;
+            color: #854d0e;
         }
     </style>
 </head>
 <body class="p-4 md:p-8">
+
     <div class="max-w-4xl mx-auto">
-        <!-- Header / Hero Section -->
-        <header class="yellow-gradient rounded-3xl p-8 text-white flex flex-col md:flex-row items-center gap-8 shadow-xl mb-8">
-            <div class="w-40 h-40 flex-shrink-0">
-                <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Meisya" alt="Foto Meisya" class="profile-img rounded-full w-full h-full object-cover bg-white">
+        <!-- Header Section -->
+        <header class="card p-8 flex flex-col md:flex-row items-center gap-8 mb-8 border-b-8 border-yellow-400">
+            <div class="relative">
+                <!-- Profile Image Placeholder -->
+                <div class="w-40 h-40 rounded-full border-4 border-yellow-400 overflow-hidden bg-gray-200 flex items-center justify-center">
+                    <img src="Gemini_Generated_Image_v8bys6v8bys6v8by.png" alt="Foto Profil Meisya" class="w-full h-full object-cover">
+                </div>
             </div>
-            <div class="text-center md:text-left">
-                <h1 class="text-3xl md:text-5xl font-bold mb-2">MEISYA RIA MAKDALENA</h1>
-                <p class="text-yellow-100 text-lg mb-4">Pelajar & Kreator Rambut</p>
-                <div class="flex flex-wrap justify-center md:justify-start gap-4 text-sm font-medium">
-                    <span class="bg-white/20 px-3 py-1 rounded-full">📍 Bandung, Indonesia</span>
-                    <span class="bg-white/20 px-3 py-1 rounded-full">📅 19 Mei 2008</span>
+            
+            <div class="text-center md:text-left flex-1">
+                <h1 class="text-4xl font-bold text-gray-800 mb-2">MEISYA RIA MAKDALENA</h1>
+                <p class="text-yellow-700 font-medium mb-4">Pelajar & Kreator Kreatif</p>
+                <div class="flex flex-wrap justify-center md:justify-start gap-4 text-sm text-gray-600">
+                    <span class="flex items-center gap-2"><i class="fas fa-calendar text-yellow-500"></i> 19 Mei 2008</span>
+                    <span class="flex items-center gap-2"><i class="fas fa-phone text-yellow-500"></i> +62 83834400188</span>
                 </div>
             </div>
         </header>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <!-- Sidebar (Contact & Skills) -->
-            <div class="md:col-span-1 space-y-8">
-                <!-- Kontak -->
-                <section class="card p-6">
-                    <h3 class="text-xl font-bold mb-4 flex items-center gap-2">
-                        <span>📞</span> Kontak
-                    </h3>
-                    <ul class="space-y-3 text-gray-600 text-sm">
-                        <li>
-                            <p class="font-semibold text-yellow-600">Telepon</p>
-                            <a href="tel:+6283834400188" class="hover:text-yellow-500">+62 838-3440-0188</a>
-                        </li>
-                        <li>
-                            <p class="font-semibold text-yellow-600">Alamat</p>
-                            <p>Kavling surya asri rancamulya blok A no 3 Rt2 Rw10</p>
-                        </li>
-                    </ul>
-                </section>
-
-                <!-- Sosial Media -->
-                <section class="card p-6 border-l-4 border-yellow-400">
-                    <h3 class="text-xl font-bold mb-4">🌐 Sosial Media</h3>
-                    <div class="space-y-3 text-sm">
-                        <div class="flex items-center gap-3">
-                            <span class="font-bold">IG:</span>
-                            <a href="#" class="text-blue-600 hover:underline">@lipsylie</a>
-                        </div>
-                        <div class="flex items-center gap-3 text-gray-400 italic">
-                            <span>FB: -</span>
-                        </div>
-                        <div class="flex items-center gap-3 text-gray-400 italic">
-                            <span>TikTok: -</span>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- Keahlian -->
-                <section class="card p-6">
-                    <h3 class="text-xl font-bold mb-4">✨ Keahlian</h3>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="bg-yellow-100 text-yellow-700 px-3 py-1 rounded-lg text-sm font-semibold border border-yellow-200">Menata Rambut</span>
-                        <span class="bg-yellow-100 text-yellow-700 px-3 py-1 rounded-lg text-sm font-semibold border border-yellow-200">Memasak</span>
-                    </div>
-                </section>
-
-                <!-- Bahasa -->
-                <section class="card p-6">
-                    <h3 class="text-xl font-bold mb-4">🗣️ Bahasa</h3>
-                    <ul class="space-y-2">
-                        <li class="flex justify-between items-center">
-                            <span class="text-sm">Indonesia</span>
-                            <div class="w-24 bg-gray-200 h-2 rounded-full"><div class="bg-yellow-400 h-2 w-full rounded-full"></div></div>
-                        </li>
-                        <li class="flex justify-between items-center">
-                            <span class="text-sm">B. Inggris</span>
-                            <div class="w-24 bg-gray-200 h-2 rounded-full"><div class="bg-yellow-400 h-2 w-2/3 rounded-full"></div></div>
-                        </li>
-                    </ul>
-                </section>
-            </div>
-
-            <!-- Main Content -->
-            <div class="md:col-span-2 space-y-8">
+            <!-- Left Column: Bio & Contact -->
+            <div class="space-y-8">
                 <!-- Tentang Diri -->
-                <section class="card p-8">
-                    <h2 class="text-2xl font-bold section-title">Tentang Saya</h2>
+                <section class="card p-6">
+                    <h2 class="section-title">Tentang Diri</h2>
                     <p class="text-gray-600 leading-relaxed">
-                        Halo! Saya adalah seorang yang ceria dan penuh semangat. Saya memiliki ketertarikan besar dalam dunia kreatif dan rumah tangga. Di waktu luang, saya sangat suka <strong>memasak</strong> hidangan baru, <strong>menonton film</strong> untuk mencari inspirasi, dan aktif <strong>bermain</strong> serta bersosialisasi. Hobi utama saya adalah <strong>membaca komik</strong> yang membantu saya mengasah imajinasi.
+                        Halo! Saya adalah pribadi yang ceria. Di waktu luang, saya sangat menikmati kegiatan <strong>memasak</strong>, <strong>menonton film</strong>, dan <strong>bermain</strong>. Saya percaya kreativitas bisa datang dari mana saja.
                     </p>
                 </section>
 
+                <!-- Kontak & Sosmed -->
+                <section class="card p-6">
+                    <h2 class="section-title">Sosial Media</h2>
+                    <ul class="space-y-3">
+                        <li class="flex items-center gap-3">
+                            <i class="fab fa-instagram text-pink-600 text-xl"></i>
+                            <span class="text-gray-700">@lipsylie</span>
+                        </li>
+                        <li class="flex items-center gap-3 opacity-50">
+                            <i class="fab fa-facebook text-blue-600 text-xl"></i>
+                            <span class="text-gray-700">-</span>
+                        </li>
+                        <li class="flex items-center gap-3 opacity-50">
+                            <i class="fab fa-tiktok text-black text-xl"></i>
+                            <span class="text-gray-700">-</span>
+                        </li>
+                    </ul>
+                </section>
+
+                <!-- Alamat -->
+                <section class="card p-6">
+                    <h2 class="section-title">Alamat</h2>
+                    <p class="text-gray-600 text-sm">
+                        Kavling Surya Asri Rancamulya Blok A No 3, Rt 02 Rw 10.
+                    </p>
+                </section>
+                
+                <!-- Bahasa -->
+                <section class="card p-6">
+                    <h2 class="section-title">Bahasa</h2>
+                    <div class="space-y-2">
+                        <div class="flex justify-between items-center">
+                            <span>Indonesia</span>
+                            <div class="w-24 h-2 bg-gray-200 rounded-full overflow-hidden">
+                                <div class="bg-yellow-400 h-full w-[100%]"></div>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span>Inggris</span>
+                            <div class="w-24 h-2 bg-gray-200 rounded-full overflow-hidden">
+                                <div class="bg-yellow-400 h-full w-[70%]"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Right Column: Education & Experience -->
+            <div class="md:col-span-2 space-y-8">
                 <!-- Pendidikan -->
-                <section class="card p-8">
-                    <h2 class="text-2xl font-bold section-title">Pendidikan</h2>
-                    <div class="space-y-6">
-                        <div class="relative pl-8 border-l-2 border-yellow-200">
-                            <div class="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-yellow-400"></div>
-                            <h4 class="font-bold text-gray-800">SMA KP Baleendah</h4>
-                            <p class="text-sm text-yellow-600 font-medium">Lulus Tahun 2026 (Estimasi)</p>
+                <section class="card p-6">
+                    <h2 class="section-title text-2xl">Pendidikan</h2>
+                    <div class="space-y-6 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-yellow-300 before:to-transparent">
+                        
+                        <!-- SMA -->
+                        <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+                            <div class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-yellow-400 text-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-4 rounded border border-yellow-100 bg-yellow-50 shadow">
+                                <div class="flex items-center justify-between space-x-2 mb-1">
+                                    <div class="font-bold text-gray-800">SMA KP Baleendah</div>
+                                    <time class="font-mono text-xs font-semibold text-yellow-600">Lulus 2026</time>
+                                </div>
+                                <div class="text-gray-600 text-sm">Siswa Aktif</div>
+                            </div>
                         </div>
-                        <div class="relative pl-8 border-l-2 border-yellow-200">
-                            <div class="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-yellow-400"></div>
-                            <h4 class="font-bold text-gray-800">SMP KP Baleendah</h4>
-                            <p class="text-sm text-yellow-600 font-medium">Lulus Tahun 2023</p>
+
+                        <!-- SMP -->
+                        <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+                            <div class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-yellow-400 text-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-4 rounded border border-yellow-100 bg-yellow-50 shadow">
+                                <div class="flex items-center justify-between space-x-2 mb-1">
+                                    <div class="font-bold text-gray-800">SMP KP Baleendah</div>
+                                    <time class="font-mono text-xs font-semibold text-yellow-600">Lulus 2023</time>
+                                </div>
+                            </div>
                         </div>
-                        <div class="relative pl-8 border-l-2 border-yellow-200">
-                            <div class="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-yellow-400"></div>
-                            <h4 class="font-bold text-gray-800">SDN 1 Lintongnihuta</h4>
-                            <p class="text-sm text-yellow-600 font-medium">Lulus Tahun 2020</p>
+
+                        <!-- SD -->
+                        <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+                            <div class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-yellow-400 text-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-4 rounded border border-yellow-100 bg-yellow-50 shadow">
+                                <div class="flex items-center justify-between space-x-2 mb-1">
+                                    <div class="font-bold text-gray-800">SDN 1 Lintongnihuta</div>
+                                    <time class="font-mono text-xs font-semibold text-yellow-600">Lulus 2020</time>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </section>
 
-                <!-- Organisasi -->
-                <section class="card p-8">
-                    <h2 class="text-2xl font-bold section-title">Pengalaman Organisasi</h2>
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                        <div class="p-4 bg-yellow-50 rounded-xl border border-yellow-100">
-                            <p class="text-xs font-bold text-yellow-600 mb-1">SMA & SMP</p>
-                            <h4 class="font-bold text-gray-800">OSIS</h4>
-                            <p class="text-sm text-gray-500">Organisasi Siswa Intra Sekolah</p>
+                <!-- Keahlian & Hobby -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <section class="card p-6">
+                        <h2 class="section-title">Keahlian</h2>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-sm font-medium">Menata Rambut</span>
                         </div>
-                        <div class="p-4 bg-yellow-50 rounded-xl border border-yellow-100">
-                            <p class="text-xs font-bold text-yellow-600 mb-1">SD</p>
-                            <h4 class="font-bold text-gray-800">Pramuka</h4>
-                            <p class="text-sm text-gray-500">Praja Muda Karana</p>
+                    </section>
+                    <section class="card p-6">
+                        <h2 class="section-title">Hobby</h2>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-sm font-medium">Membaca Komik</span>
+                        </div>
+                    </section>
+                </div>
+
+                <!-- Pengalaman Organisasi -->
+                <section class="card p-6">
+                    <h2 class="section-title text-2xl">Pengalaman Organisasi</h2>
+                    <div class="space-y-4">
+                        <div class="flex gap-4 p-4 hover:bg-yellow-50 rounded-lg transition-colors border-l-4 border-yellow-400">
+                            <div class="text-yellow-600 text-xl font-bold">SMA</div>
+                            <div>
+                                <h3 class="font-bold text-gray-800">OSIS</h3>
+                                <p class="text-sm text-gray-600">Organisasi Siswa Intra Sekolah</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4 p-4 hover:bg-yellow-50 rounded-lg transition-colors border-l-4 border-yellow-400">
+                            <div class="text-yellow-600 text-xl font-bold">SMP</div>
+                            <div>
+                                <h3 class="font-bold text-gray-800">OSIS</h3>
+                                <p class="text-sm text-gray-600">Organisasi Siswa Intra Sekolah</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4 p-4 hover:bg-yellow-50 rounded-lg transition-colors border-l-4 border-yellow-400">
+                            <div class="text-yellow-600 text-xl font-bold">SD</div>
+                            <div>
+                                <h3 class="font-bold text-gray-800">Pramuka</h3>
+                                <p class="text-sm text-gray-600">Anggota Aktif</p>
+                            </div>
                         </div>
                     </div>
                 </section>
 
                 <!-- Sertifikat -->
-                <section class="card p-8 text-center border-2 border-dashed border-gray-200 bg-gray-50">
-                    <h2 class="text-2xl font-bold mb-2">Sertifikat</h2>
-                    <p class="text-gray-400 italic">Belum ada sertifikat yang dicantumkan.</p>
+                <section class="card p-6 text-center opacity-60">
+                    <h2 class="section-title text-left">Sertifikat</h2>
+                    <p class="italic text-gray-500">- Belum ada sertifikat -</p>
                 </section>
             </div>
         </div>
 
-        <footer class="mt-12 text-center text-gray-400 text-sm">
-            <p>&copy; 2024 Meisya Ria Makdalena. Dibuat dengan ❤️</p>
+        <footer class="mt-8 text-center text-gray-500 text-sm pb-8">
+            <p>&copy; 2024 Meisya Ria Makdalena. Dibuat dengan penuh semangat.</p>
         </footer>
     </div>
+
 </body>
-</html> 
+</html>
 </body>
 </html>
